@@ -11,3 +11,7 @@ database implemented to store the extra data(i.e. question, users, messages,etc)
 
 ## Demo 
 ![](https://thumbs.gfycat.com/DecisiveAshamedAmericanwirehair-mobile.gif)
+
+## Todo:
+- Add a database to store the data
+- Polish the frontend
