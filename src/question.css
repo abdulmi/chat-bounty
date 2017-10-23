@@ -1,0 +1,111 @@
+.question {
+  font-size: 20;
+  text-align: -webkit-match-parent;
+  list-style-type: none;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.newQuestion {
+  font-size: 30;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.submitQuestion {
+  color: #FFF;
+  background-color: #0095ff;
+  border-color: #07c;
+  box-shadow: 1px 0 #66bff;
+  white-space: nowrap;
+  font-size: 100%;
+  display: inline-block;
+  padding: .61538462em 1em;
+  vertical-align: middle;
+  min-height: 2.46153846em;
+  box-sizing: border-box;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 2px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  outline: none;
+  touch-action: manipulation;
+  transition: all .1s
+}
+
+.answerLink {
+  color: white;
+  text-decoration: none;
+}
+
+.answerQuestion {
+  color: #FFF;
+  background-color: #28a745;
+  border-color: #07c;
+  box-shadow: 1px 0 #66bff;
+  white-space: nowrap;
+  font-size: 100%;
+  display: inline-block;
+  padding: .61538462em 1em;
+  vertical-align: middle;
+  min-height: 2.46153846em;
+  box-sizing: border-box;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 2px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  outline: none;
+  touch-action: manipulation;
+  transition: all .1s;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  margin-bottom: 1%;
+}
+
+.fields {
+  border-color: #07c;
+  box-shadow: 1px 0 #66bff;
+  white-space: nowrap;
+  font-size: 100%;
+  display: inline-block;
+  padding: .61538462em 1em;
+  vertical-align: middle;
+  min-height: 2.46153846em;
+  box-sizing: border-box;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 2px;
+  border: 1px solid transparent;
+  outline: none;
+  touch-action: manipulation;
+  transition: all .1s
+}
+
+.questionCard {
+  border-color: #07c;
+  box-shadow: 1px 1 #66bff;
+  white-space: nowrap;
+  font-size: 100%;
+  display: inline-block;
+  padding: .61538462em 1em;
+  vertical-align: middle;
+  min-height: 2.46153846em;
+  box-sizing: border-box;
+  font-weight: 400;
+  line-height: 1;
+  text-decoration: none;
+  border-radius: 2px;
+  border: 1px solid #000000;
+  outline: none;
+  touch-action: manipulation;
+  transition: all .1s;
+  width: 80%;
+  margin-bottom: 1%;
+}

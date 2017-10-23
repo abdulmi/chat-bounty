@@ -13,11 +13,8 @@ class Chat extends React.Component {
       messages: [],
       inputValue: "",
       paymentInputValue: 0,
-      deposit: 3,
       withdraw: 0,
-      question: "temp question",
-      asker: "0xdffewsdfsdffqwef12214",
-      answerer: "0xajsdfljdsflj3ljlradfsdfsdfj"
+      answerer: web3.eth.accounts[1]
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -27,11 +24,9 @@ class Chat extends React.Component {
     this.handleWithdraw = this.handleWithdraw.bind(this);
 
     console.log(web3)
+
+    //gets balance
     console.log(web3.fromWei(web3.eth.getBalance(web3.eth.accounts[1]).toNumber()));
-
-
-    // console.log(web3.fromWei(web3.eth.getBalance(address).toNumber()));
-    // myBounty.withdraw.sendTransaction({from: web3.eth.accounts[1]},(err,res)=>console.log(err,res));
 
     //DEPLOY CONTRACT
     // var browser_con_sol_bountiesContract = web3.eth.contract(abi);
@@ -46,10 +41,6 @@ class Chat extends React.Component {
     //          console.log('Contract mined! address: ' + contract.address + ' transactionHash: ' + contract.transactionHash);
     //     }
     // })
-
-    // var bounty = web3.eth.contract(abi);
-    // var myBounty = bounty.at(address);
-    // console.log(myBounty)
 
     // A bunch of contract functions for testing purposes
     // myBounty.addQuestion.sendTransaction({from: web3.eth.accounts[0], value: 3000000000000000000},(err,res)=>{console.log(err,res)})
@@ -83,10 +74,10 @@ class Chat extends React.Component {
   handleMilestoneSubmit(event){
     event.preventDefault();
     // console.log(web3.eth.accounts[0])
-    if(web3.fromWei(this.state.paymentInputValue) <= this.state.deposit && this.state.paymentInputValue !== 0) {
+    if(web3.fromWei(this.state.paymentInputValue) <= this.props.deposit && this.state.paymentInputValue !== 0) {
         console.log('hello')
         var amount = this.state.paymentInputValue;
-        this.setState({deposit: this.state.deposit-web3.fromWei(amount),paymentInputValue:0, withdraw: Number(this.state.withdraw)+Number(web3.fromWei(amount))})
+        this.setState({deposit: this.props.deposit-web3.fromWei(amount),paymentInputValue:0, withdraw: Number(this.state.withdraw)+Number(web3.fromWei(amount))})
         myBounty.releaseMilestone.sendTransaction(amount,{from: web3.eth.accounts[0]},(err,res)=>console.log(err,res))
     }
   }
@@ -123,7 +114,7 @@ class Chat extends React.Component {
     return (
       <div >
         <div className={styles.details}>
-          <div className={styles.question}> <span> Question: {this.state.question} [{this.state.deposit} Eth] </span></div>
+          <div className={styles.question}> <span> Question: {this.props.question} [{this.props.deposit} Eth] </span></div>
           <form onSubmit={this.handleWithdraw} style={{textAlign:"Center", marginBottom: "1%"}}>
             <input type="submit" value="Withdraw" />
             <span > {this.state.withdraw} Eth </span>
@@ -134,7 +125,7 @@ class Chat extends React.Component {
           </form>
           <div style={{float:"left"}}>
             <span className={styles.you}>You </span>
-            <span> {this.state.asker} </span>
+            <span> {this.props.asker} </span>
           </div>
           <div style={{float:"right"}}>
             <span className={styles.expert}>Expert </span>
