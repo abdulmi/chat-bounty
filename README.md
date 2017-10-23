@@ -10,4 +10,4 @@ I am using React for my frontend. I've built one simple contract that handles mi
 database implemented to store the extra data(i.e. question, users, messages,etc). Also, used socket.io to make the real-time chat.
 
 ## Demo 
-<iframe src='https://gfycat.com/ifr/DecisiveAshamedAmericanwirehair' frameborder='0' scrolling='no' width='2556' height='1388' allowfullscreen></iframe>
+![](https://thumbs.gfycat.com/DecisiveAshamedAmericanwirehair-mobile.jpg)
