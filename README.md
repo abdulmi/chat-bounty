@@ -22,3 +22,4 @@ database implemented to store the extra data(i.e. question, users, messages,etc)
 ## Todo:
 - Add a database to store the data
 - Polish the frontend
+- This could be extended to getting feedback on your resume, getting advice from experienced people in general. 
