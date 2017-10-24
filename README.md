@@ -9,8 +9,12 @@ The project started in Ethereum hackathon in Waterloo, but our team couldn't fin
 I am using React for my frontend. I've built one simple contract that handles milestone payments(bounty). Right now, there is no
 database implemented to store the extra data(i.e. question, users, messages,etc). Also, used socket.io to make the real-time chat.
 
-## Demo 
-![submit_a_question](https://i.imgur.com/2a4d4fW.png)
+## Demo(workflow) 
+### Submitting a new question
+![submit_a_question](https://i.imgur.com/dnkwLUM.gifv)
+
+### Answering a question after clicking answer
+![answer]()
 
 ## Todo:
 - Add a database to store the data
