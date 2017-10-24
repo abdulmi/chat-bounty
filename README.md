@@ -10,7 +10,7 @@ I am using React for my frontend. I've built one simple contract that handles mi
 database implemented to store the extra data(i.e. question, users, messages,etc). Also, used socket.io to make the real-time chat.
 
 ## Demo 
-![](https://imgflip.com/gif/1y34af)
+<a href="https://imgflip.com/gif/1y50j3"><img src="https://i.imgflip.com/1y50j3.gif" title="made at imgflip.com"/></a>
 
 ## Todo:
 - Add a database to store the data
