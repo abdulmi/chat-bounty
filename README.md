@@ -14,7 +14,10 @@ database implemented to store the extra data(i.e. question, users, messages,etc)
 ![submit_a_question](https://i.imgur.com/mQsNfmd.gif)
 
 ### Answering a question after clicking answer
-![answer]()
+![answer](https://i.imgur.com/NxdsVps.gif)
+
+### Paying a milestone
+![pay](https://i.imgur.com/QFVx6m3.gif)
 
 ## Todo:
 - Add a database to store the data
