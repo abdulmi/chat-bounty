@@ -11,7 +11,7 @@ database implemented to store the extra data(i.e. question, users, messages,etc)
 
 ## Demo(workflow) 
 ### Submitting a new question
-![submit_a_question](https://i.imgur.com/dnkwLUM.gif)
+![submit_a_question](https://i.imgur.com/mQsNfmd.gif)
 
 ### Answering a question after clicking answer
 ![answer]()
